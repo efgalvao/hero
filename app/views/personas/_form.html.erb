@@ -1,0 +1,41 @@
+<%= form_with(model: persona, local: true) do |form| %>
+  <% if persona.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(persona.errors.count, "error") %> prohibited this persona from being saved:</h2>
+
+      <ul>
+        <% persona.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :karma %>
+    <%= form.text_field :karma %>
+  </div>
+
+  <div class="field">
+    <%= form.label :media %>
+    <%= form.text_field :media %>
+  </div>
+
+  <div class="field">
+    <%= form.label :appearance %>
+    <%= form.text_field :appearance %>
+  </div>
+
+  <div class="field">
+    <%= form.label :picture %>
+    <%= form.file_field :picture %>
+  </div>
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,20 @@
+
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+  <div class="col-md-9">
+    <%= image_tag(@persona.picture_url, width: '100%') if @persona.picture.present? %>
+  </div>
+
+  <div class="col-md-3">
+    <p><b>Name: </b><%= @persona.name %></p>
+    <p><b>Media: </b><%= @persona.media %></p>
+    <p><b>Appearance: </b><%= @persona.appearance %></p>
+
+    <p>
+      <%= link_to 'Edit', edit_persona_path(@persona) %> |
+      <%= link_to 'Destroy', @persona, data: { confirm: 'Are you sure?' }, method: :delete %> |
+      <%= link_to 'Back', personas_path %>
+    </p>
+  </div>
+</div>

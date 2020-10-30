@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Characters !!!</h1>
+<% @personas.in_groups_of(4) do |group| %>
+  <div class="row">
+    <% group.compact.each do |persona| %>
+      <div class="col-md-3">
+        <%= image_tag persona.picture_url, width: '100%' if persona.picture.present? %>
+        <h4><%= link_to persona.name, persona %></h4>
+        <%= persona.media %>
+      </div>
+    <% end %>
+  </div>
+
+<% end %>
+

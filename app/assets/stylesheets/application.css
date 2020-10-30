@@ -1,0 +1,60 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ table, td, th { vertical-align: middle; border: none; }
+ th { border-bottom: 1px solid #DDD; }
+ body { margin: 0; }
+
+ navbar {
+    min-height: 38px;
+    background-color: royalblue;
+  }
+  
+ navbar a.brand { 
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+ }
+
+navbar a.brand:hover {
+ color: white;
+ background-color: gray;
+ font-family: Arial, Helvetica, sans-serif;
+ text-decoration: none;
+}
+
+navbar a.nav-link {
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: transparent;
+}
+
+navbar a.nav-link:hover {
+    color: white;
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+
+footer {
+    background-color:royalblue;
+    color: white;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: sticky; 
+    bottom: 0px;
+    margin-top: 200px; 
+}
