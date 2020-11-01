@@ -51,10 +51,11 @@ navbar a.nav-link:hover {
 footer {
     background-color:royalblue;
     color: white;
-    font-size: 13px;
+    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    position: sticky; 
+    position: fixed; 
     bottom: 0px;
-    margin-top: 200px; 
+    right: 0px;
+    left: 0px;
 }
