@@ -17,8 +17,7 @@
     </div>
 
   <div class="field">
-    <%= form.label :karma %>
-    <%= form.text_field :karma, placeholder: "Hero, Villain or Neutral" %>
+  <%= form.select(:karma, options_for_select([['Hero', "Hero"], ['Villain', 'Villain'], ['Neutral', 'Neutral']])) %>
   </div>
 
   <div class="field">

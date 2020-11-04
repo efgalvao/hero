@@ -1,0 +1,31 @@
+  <navbar class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="brand" href="/">Heros and Villains</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/personas">Characters</a>
+        </li>
+        <li class="nav-item active">
+          <%= link_to 'New Character', new_persona_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/pages/info">About me</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <%= form_tag(search_page_path, :method => "get",   
+    class: 'navbar-form navbar-left') do %>  
+  <div class="input-group">  
+    <%= search_field_tag :search, params[:search], placeholder: "Search by name", class: "form-control" %>  
+    <div class="input-group-btn">  
+      <%= button_tag "Search", :class => 'btn btn-info glyphicon glyphicon-search',:name => nil%>  
+    </div>  
+  </div>  
+<% end %>
+
+</navbar>

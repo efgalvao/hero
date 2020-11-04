@@ -5,6 +5,15 @@ class PersonasController < ApplicationController
   # GET /personas.json
   def index
     @personas = Persona.all
+    # if params[:search]
+    #     @personas = Persona.search(params[:search]).order("created_at DESC")
+    #   else
+    #     @personas = Persona.all.order('created_at DESC')
+    # end
+  end
+  
+  def search
+    @personas = Persona.search(params[:search])
   end
 
   # GET /personas/1
@@ -71,6 +80,6 @@ class PersonasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def persona_params
-      params.require(:persona).permit(:name, :karma, :media, :appearance)
+      params.require(:persona).permit(:name, :karma, :media, :appearance, :search)
     end
 end

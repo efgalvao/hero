@@ -64,7 +64,7 @@ GEM
       erubi (>= 1.0.0)
       rack (>= 0.9.0)
     bindex (0.8.1)
-    bootsnap (1.4.9)
+    bootsnap (1.5.0)
       msgpack (~> 1.0)
     builder (3.2.4)
     byebug (11.1.3)
@@ -200,7 +200,7 @@ GEM
     thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
-    trestle (0.9.3)
+    trestle (0.9.4)
       activemodel (>= 4.2.0)
       kaminari (>= 1.1.0)
       railties (>= 4.2.0)
@@ -208,9 +208,9 @@ GEM
     trestle-active_storage (3.0.1)
       rails (>= 5.2, < 7)
       trestle (~> 0.9.0, >= 0.9.3)
-    trestle-auth (0.4.0)
+    trestle-auth (0.4.1)
       bcrypt (~> 3.1.7)
-      trestle (~> 0.9.0)
+      trestle (~> 0.9.0, >= 0.9.3)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
@@ -234,7 +234,7 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.4.0)
+    zeitwerk (2.4.1)
 
 PLATFORMS
   ruby

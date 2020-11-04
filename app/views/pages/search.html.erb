@@ -1,0 +1,18 @@
+<h3>Search Result</h3>  
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>Karma</th>
+    <th>Media</th>
+    <th>Appearance</th>
+  </tr>
+    <% @results.each do |result| %>  
+   <tr>
+    <th><%= result.name %></th>
+    <th><%= result.karma %></th>
+    <th><%= result.media %></th>
+    <th><%= result.appearance %></th>
+  </tr>
+     <% end %>
+</table>
+
